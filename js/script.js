@@ -50,7 +50,6 @@ $('.slick-carousel').slick({
 				breakpoint: 576,
 				settings: {
 					slidesToShow: 1,
-					arrows:false,
 					dots:true,
 					
 
@@ -154,7 +153,18 @@ $(document).keyup(function(event){
 			$('.modal').removeClass('is-visible');
 		}
 	});
+console.log(typeof $('.zoomed-img').attr('src'));
+$('img').on('click',function(event){
+	if($(event.target).attr('zoom')=="true"){
+		if(	$('.zoomed-img').attr('src') === $(event.target).attr('data-src') || $('.zoomed-img').attr('src') === ""){
+			$('.modal[data-modal=2]').addClass('is-visible');
+		}
+else{
 
-
+	$('.modal[data-modal=2]').addClass('is-visible');
+	$('.zoomed-img').attr('src',$(event.target).attr('data-src'));
+}
+	}
+})
 
 });
