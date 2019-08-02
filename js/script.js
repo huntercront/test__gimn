@@ -153,15 +153,7 @@ $(document).keyup(function(event){
 			$('.modal').removeClass('is-visible');
 		}
 	});
-console.log(typeof $('.zoomed-img').attr('src'));
-$('img').on('click',function(event){
-	if($(event.target).attr('zoom')=="true"){
-		if(	$('.zoomed-img').attr('src') === $(event.target).attr('data-src') || $('.zoomed-img').attr('src') === ""){
-			$('.modal[data-modal=2]').addClass('is-visible');
-		}
-else{
 
-<<<<<<< HEAD
 	activityIndicatorOn = function()
 			{
 				$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
@@ -220,12 +212,5 @@ $(function() {
   });
 });
 
-=======
-	$('.modal[data-modal=2]').addClass('is-visible');
-	$('.zoomed-img').attr('src',$(event.target).attr('data-src'));
-}
-	}
-})
->>>>>>> 2a351eea96e781536888670d18a18fcf2c3ad339
 
 });
