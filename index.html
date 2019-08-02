@@ -16,7 +16,13 @@
 </head>
 
 <body>
-	<header class="header header-top"></header>
+	<header class="header header-top"> 
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-3 offset-1"><span class="site--reg">Официальный сайт</span></div>
+			</div>
+		</div>
+	</header>
 		<header class="header header-mid">
 				<div class="container">
 						<div class="row align-items-center">
@@ -32,15 +38,17 @@
 									</div>
 								<div class="col-5 col-md-4 col-lg-5 d-flex-c phone-container">
 										<address class="phone">
-												<a href="tel:+78005550033" class="phone__text">
-														<span class="heading-h4">8 800 555-00-33</span>
-												</a>
+												<div class="phone-wrapper">
+														<a href="tel:+78005550033" class="phone__text">
+																<span class="heading-h4">8 800 555-00-33</span>
+														</a>
+													<span class="office--name">Центральный офис </span></div>	
 												<span class="phone__desc">г. Москва, Пресненская набережная д. 12 этаж 13 
 														(ММДЦ «Москва-Сити», «Башня Федерация»)</span>
 										</address>
 								</div>
 								<div class="col-3 col-md-4 col-lg-3 d-flex-c-e">
-										<a href="#modal-open" class="call-to-action-button">Оставить заявку</a>
+										<a href="#modal-open" data-modal-open="1" class="call-to-action-button">Оставить заявку</a>
 									</div>
 						</div>
 				</div>
@@ -193,12 +201,14 @@
 					</div>
 					<div class="row about-row-2">
 						<div class="col-12 col-sm-6 col-md-6">
-							<article class="article--card d-flex-s align-items-center">
-								<div class="article--img--wrapper d-flex-c">
-									<img src="./img/about/map--icon.svg" alt="" class="article--img">
-								</div>
-								<p class="article--descr">Представительмтва присутствуют в 50 субъектах РФ</p>
-							</article>
+								<article class="article--card d-flex-s align-items-center">
+										<div class="article--img--wrapper d-flex-c">
+											<img src="./img/about/about--car.svg" alt="" class="article--img ">
+										</div>
+										<p class="article--descr">В номенклатурный перечень входит
+												продукция 842 поставщиков</p>
+									</article>
+						
 							<article class="article--card d-flex-s align-items-center">
 								<div class="article--img--wrapper d-flex-c">
 									<img src="./img/about/about--factury.svg" alt="" class="article--img a-small">
@@ -208,13 +218,12 @@
 							</article>
 						</div>
 						<div class="col-12 col-sm-6 col-md-6">
-							<article class="article--card d-flex-s align-items-center">
-								<div class="article--img--wrapper d-flex-c">
-									<img src="./img/about/about--car.svg" alt="" class="article--img ">
-								</div>
-								<p class="article--descr">В номенклатурный перечень входит
-										продукция 842 поставщиков</p>
-							</article>
+								<article class="article--card d-flex-s align-items-center">
+										<div class="article--img--wrapper d-flex-c">
+											<img src="./img/about/map--icon.svg" alt="" class="article--img">
+										</div>
+										<p class="article--descr">Представительмтва присутствуют в 50 субъектах РФ</p>
+									</article>
 							<article class="article--card d-flex-s align-items-center">
 								<div class="article--img--wrapper d-flex-c">
 									<img src="./img/about/about--box.svg" alt="" class="article--img a-small">
@@ -227,13 +236,13 @@
 				</div>
 				<div class="col-12 col-md-5">
 					<div class="slider-col slick-about">
-						<img src="./img/about/about--sert-1.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-						<img src="./img/about/about--sert-2.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-						<img src="./img/about/about--sert-3.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-						<img src="./img/about/about--sert-4.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-						<img src="./img/about/about--sert-5.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-						<img src="./img/about/about--sert-6.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-						<img src="./img/about/about--sert-7.jpg" alt="Сертификат НАО'ЦО ГиМН'">
+							<a class="can--zoom" href="/img/about/sert--fullsize/about--sert-1.jpg" data-imagelightbox="a"><img src="./img/about/about--sert-1.jpg"></a>
+								<a class="can--zoom" href="./img/about/sert--fullsize/about--sert-2.jpg" data-imagelightbox="a"><img src="./img/about/about--sert-2.jpg" alt="Сертификат НАО'ЦО ГиМН'">
+								<a class="can--zoom" href="./img/about/sert--fullsize/about--sert-3.jpg" data-imagelightbox="a"><img src="./img/about/about--sert-3.jpg" alt="Сертификат НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/about/sert--fullsize/about--sert-4.jpg" data-imagelightbox="a"><img src="./img/about/about--sert-4.jpg" alt="Сертификат НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/about/sert--fullsize/about--sert-5.jpg" data-imagelightbox="a"><img src="./img/about/about--sert-5.jpg" alt="Сертификат НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/about/sert--fullsize/about--sert-6.jpg" data-imagelightbox="a"><img src="./img/about/about--sert-6.jpg" alt="Сертификат НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/about/sert--fullsize/about--sert-7.jpg" data-imagelightbox="a"><img src="./img/about/about--sert-7.jpg" alt="Сертификат НАО'ЦО ГиМН'"></a>
 					</div>
 				</div>
 			</div>
@@ -257,7 +266,7 @@
 										<p class="text">6 552,92</p>
 										<p class="text text_small">МЛРД ₽</p>
 								</div>
-								<div class="card-desc"> Экономия при заключении контрактов</div>
+								<div class="card-desc"> Общая сумма размещенных закупок</div>
 						</div>
 				</div>
 				<div class="col-3">
@@ -269,7 +278,7 @@
 										<p class="text">7 074,59</p>
 										<p class="text text_small">МЛРД ₽</p>
 								</div>
-								<div class="card-desc"> Экономия при заключении контрактов</div>
+								<div class="card-desc"> Общая сумма размещенных закупок</div>
 
 						</div>
 					</div>
@@ -282,7 +291,7 @@
 							<p class="text">6 937,96</p>
 							<p class="text text_small">МЛРД ₽</p>
 						</div>
-						<div class="card-desc"> Экономия при заключении контрактов</div>
+						<div class="card-desc"> Общая сумма размещенных закупок</div>
 
 					</div>
 				</div>
@@ -295,7 +304,7 @@
 							<p class="text">7 507,11</p>
 							<p class="text text_small">МЛРД ₽</p>
 						</div>
-						<div class="card-desc"> Экономия при заключении контрактов</div>
+						<div class="card-desc"> Общая сумма размещенных закупок</div>
 
 					</div>
 				</div>
@@ -308,7 +317,7 @@
 							<p class="text">8 381,75</p>
 							<p class="text text_small">МЛРД ₽</p>
 						</div>
-						<div class="card-desc"> Экономия при заключении контрактов</div>
+						<div class="card-desc"> Общая сумма размещенных закупок</div>
 
 					</div>
 				</div>
@@ -321,7 +330,7 @@
 							<p class="text">5 228,39</p>
 							<p class="text text_small">МЛРД ₽</p>
 						</div>
-						<div class="card-desc"> Экономия при заключении контрактов</div>
+						<div class="card-desc"> Общая сумма размещенных закупок</div>
 
 					</div>
 				</div>
@@ -487,7 +496,7 @@
 							</article>
 				</div>
 				<div class="col-12 col-md-5 col-lg-3 d-flex-c">
-					<a href="#modal-open" class="call-to-action-button">Оставить заявку</a>
+					<a href="#modal-open" data-modal-open="1" class="call-to-action-button">Оставить заявку</a>
 				</div>
 			</div>
 		</div>
@@ -497,10 +506,10 @@
 				<h3 class="section-tittle creditors--tiitle">Кредиторам</h3>
 				<p class="descr--text creditors--sub">Мы финансируем исполнение госконтактов СМП и предлагаем Вам</p>
 			<div class="row">
-				<div class="col-12 col-sm-6 col-lg-3">
+				<div class="col-6 col-sm-6 col-lg-3">
 					<div class="percent--card">
-						<h5 class="percent--tittle">Коллективный разовый контракт</h5>
-						<div class="percent--value">
+						<h5 class="percent--tittle">От 100 000 руб. Минимальный скрок - 3 мес.</h5>
+						<!-- <div class="percent--value">
 							<span class="value-big">22%</span><span class="value-descr small--text">годовых</span>
 						</div>
 						<ul class="percent--list">
@@ -508,13 +517,14 @@
 							<li>от 100 000 руб.</li>
 							<li>Eжемесячная выплата %</li>
 							<li>Досрочный возврат без потери%</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-lg-3">
+				<div class="col-6 col-sm-6 col-lg-3">
 								<div class="percent--card">
-						<h5 class="percent--tittle">Коллективный разовый контракт</h5>
-						<div class="percent--value">
+						<h5 class="percent--tittle">Фиксированная доходность 28% годовых</h5>
+
+						<!-- <div class="percent--value">
 							<span class="value-big">22%</span><span class="value-descr small--text">годовых</span>
 						</div>
 						<ul class="percent--list">
@@ -522,13 +532,13 @@
 							<li>от 100 000 руб.</li>
 							<li>Eжемесячная выплата %</li>
 							<li>Досрочный возврат без потери%</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-lg-3">
+				<div class="col-6 col-sm-6 col-lg-3">
 								<div class="percent--card">
-						<h5 class="percent--tittle">Коллективный разовый контракт</h5>
-						<div class="percent--value">
+						<h5 class="percent--tittle">Ежемесячные выплаты %</h5>
+						<!-- <div class="percent--value">
 							<span class="value-big">22%</span><span class="value-descr small--text">годовых</span>
 						</div>
 						<ul class="percent--list">
@@ -536,13 +546,13 @@
 							<li>от 100 000 руб.</li>
 							<li>Eжемесячная выплата %</li>
 							<li>Досрочный возврат без потери%</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-lg-3">
+				<div class="col-6 col-sm-6 col-lg-3">
 								<div class="percent--card">
-						<h5 class="percent--tittle">Коллективный разовый контракт</h5>
-						<div class="percent--value">
+						<h5 class="percent--tittle">Досрочный возврать без потерь</h5>
+						<!-- <div class="percent--value">
 							<span class="value-big">22%</span><span class="value-descr small--text">годовых</span>
 						</div>
 						<ul class="percent--list">
@@ -550,13 +560,17 @@
 							<li>от 100 000 руб.</li>
 							<li>Eжемесячная выплата %</li>
 							<li>Досрочный возврат без потери%</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
 			</div>
 			<p class="text--postscript small--text">* Не является публичной офертой (согласно ст. 437 ГК РФ)</p>
 		</div>	
 	</section>
+
+
+
+
 
 
 	<section class="guarantees">
@@ -612,19 +626,64 @@
 				<div class="col-12 col-md-6">
 						<h3 class="section-tittle guarantees--tiitle testimonials--tittle">Отзывы</h3>
 						<div class="slider-col slick-about">
-								<img src="./img/about/about--sert-1.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-								<img src="./img/about/about--sert-2.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-								<img src="./img/about/about--sert-3.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-								<img src="./img/about/about--sert-4.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-								<img src="./img/about/about--sert-5.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-								<img src="./img/about/about--sert-6.jpg" alt="Сертификат НАО'ЦО ГиМН'">
-								<img src="./img/about/about--sert-7.jpg" alt="Сертификат НАО'ЦО ГиМН'">
+								<a class="can--zoom" href="./img/testimonials/full--size/testim--1.jpg" data-imagelightbox="testim"><img src="./img/testimonials/testim--1.jpg"></a>
+								<a class="can--zoom" href="./img/testimonials/full--size/testim--2.jpg" data-imagelightbox="testim"><img src="./img/testimonials/testim--2.jpg" alt="Отзыв о НАО'ЦО ГиМН'">
+								<a class="can--zoom" href="./img/testimonials/full--size/testim--3.jpg" data-imagelightbox="testim"><img src="./img/testimonials/testim--3.jpg" alt="Отзыв о НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/testimonials/full--size/testim--4.jpg" data-imagelightbox="testim"><img src="./img/testimonials/testim--4.jpg" alt="Отзыв о НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/testimonials/full--size/testim--5.jpg" data-imagelightbox="testim"><img src="./img/testimonials/testim--5.jpg" alt="Отзыв о НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/testimonials/full--size/testim--6.jpg" data-imagelightbox="testim"><img src="./img/testimonials/testim--6.jpg" alt="Отзыв о НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/testimonials/full--size/testim--7.jpg" data-imagelightbox="testim"><img src="./img/testimonials/testim--7.jpg" alt="Отзыв о НАО'ЦО ГиМН'"></a>
+								<a class="can--zoom" href="./img/testimonials/full--size/testim--8.jpg" data-imagelightbox="testim"><img src="./img/testimonials/testim--8.jpg" alt="Отзыв о НАО'ЦО ГиМН'"></a>
 							</div>
 							<p class="add-testimonials guarantees-a--descr">Оставить отзыв Вы можете отправим на официальный адрес эл. почты</p>
 				</div>
 			</div>
 		</div>	
 	</section>
+
+	<section class="about-creditors">
+			<div class="container">
+				<h3 class="section-tittle a-c-section-tittle">Отличия инвесторов от кредиторов</h3>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-6">
+						<div class="a-c-section">
+							<h5 class="a-c-tittle">
+									<ul class="percent--list">
+											<li>Инвестор</li>
+											</ul>
+							</h5>
+							<p class="a-c-descr">
+									Осуществляет долгосрочные вложения с целью получения прибыли. Если проект будет убыточным, капитал может быть утрачен полностью или частично без последствий для получателя инвестиций. 
+							</p>
+							<span class="a-c-smoll">
+									ФЗ от 25.02.1999 №39
+							</span>
+						</div>
+					</div>
+				
+	
+					<div class="col-12 col-md-6 col-lg-6">
+							<div class="a-c-section">
+								<h5 class="a-c-tittle">
+										<ul class="percent--list">
+												<li>Кредитор</li>
+												</ul>
+								</h5>
+								<p class="a-c-descr">
+										предоставляет свободные средства в распоряжение заемщика на определенный срок. Вне зависимости от результатов проекта, заемщик обязан вернуть средства кредитору вместе с процентами.
+								</p>
+								<span class="a-c-smoll">
+											ГК РФ Статья 810
+								</span>
+							</div>
+						</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
 	<section class="call-to-action creditors-call">
 			<div class="container">
 				<div class="row align-items-center">
@@ -649,7 +708,7 @@
 	<div class="container">
 			<h3 class="section-tittle questions--tiitle">Вопрос - ответ</h3>
 		<div class="row justify-content-center">
-			<div class="col-12 col-md-10 accordion--row ">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row ">
 					<div class="accordion"><h6 class="questions--question">Зачем финансировать исполнение государственных контрактов?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -657,7 +716,7 @@
 					</div>
 					</div>  
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Почему СМП не обращаются в банк?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -665,7 +724,7 @@
 					</div>
 					</div> 
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Почему производители не предоставляют отсрочку?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -673,7 +732,7 @@
 					</div>
 					</div> 
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Разве Вы имеете право привлекать средства от физ. лиц?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -681,7 +740,7 @@
 					</div>
 					</div> 
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Вы МФО? У Вас есть банковская лицензия?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -689,7 +748,7 @@
 					</div>
 					</div> 
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Наши вложения застрахованы?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -697,7 +756,7 @@
 					</div>
 					</div> 
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Кто оплачивает НДФЛ?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -705,7 +764,7 @@
 					</div>
 					</div> 
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Откуда такая доходность? </h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -713,7 +772,7 @@
 					</div>
 					</div> 
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Чем Вы отличаетесь от сервисов Р2B займов, таких как Пененза, МодульДеньги?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -721,7 +780,7 @@
 					</div>
 					</div> 
 			</div>
-			<div class="col-12 col-md-10 accordion--row">
+			<div class="col-12 col-md-12 col-lg-6 accordion--row">
 						<div class="accordion"><h6 class="questions--question">Зачем финансировать исполнение государственных контрактов?</h6> <div class="questions--button d-flex-c"><img src="./img/toggle--button.svg" alt=""></div></div>
 					<div class="panel">
 					<div class="accordion--descr d-flex-s">
@@ -736,7 +795,7 @@
 		<div class="map-contacts">
 				<address class="phone"><a href="/" class="logo--link">
 				</a><a href="tel:+78005550033" class="phone__text">
-						<span class="heading-h4">8 800 555-00-33</span>
+						<span class="heading-h4">8 800 555-00-33</span><span class="office--name">Центральный офис </span>
 				</a>
 				<span class="phone__desc">г. Москва, Пресненская набережная д. 12 этаж 13 
 						(ММДЦ «Москва-Сити», «Башня Федерация»)</span>
@@ -749,9 +808,21 @@
 				<a href="" class="s-icon-link s-icon-link-extra"><img src="./img/social/vk.svg" alt="" class="social-img"></a>
 			</div>
 		</div>
+		<div class="map-container">
 		<div id="map"></div>
+	</div>
 	</section>
-
+	<div class="call___button__container">
+			<a class="header-call-mobile open_modal1" href="#"><svg version="1.1" class="header-call-icon" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="348.077px" height="348.077px" viewBox="0 0 348.077 348.077" style="enable-background:new 0 0 348.077 348.077;" xml:space="preserve">
+					<path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076
+						c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257
+						c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194
+						C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02
+						C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876
+						c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029
+						C350.631,303.527,350.95,285.795,340.273,275.083z"></path>
+		 </svg></a>
+		 </div>
 	<footer class="footer-links footer">
 		<div class="container">
 			<div class="row">
@@ -793,9 +864,11 @@
 					<nav class="usefull-links">
 						<span class="list-title">Контакты</span>
 						<address class="phone"><a href="/" class="logo--link">
-						</a><a href="tel:+78005550033" class="phone__text">
-								<span class="heading-h4">8 800 555-00-33</span>
-						</a>
+						</a><div class="phone-wrapper">
+								<a href="tel:+78005550033" class="phone__text">
+										<span class="heading-h4">8 800 555-00-33</span>
+								</a>
+							<span class="office--name">Центральный офис </span></div>	
 						<span class="phone__desc">г. Москва, Пресненская набережная д. 12 этаж 13 
 								(ММДЦ «Москва-Сити», «Башня Федерация»)</span>
 								<span class="phone__desc">Факс / эл. почта:<a href="mailto: info@gimn.co" class="phone__email"> info@gimn.co</a></a></span>
@@ -807,7 +880,7 @@
 					<a href="" class="s-icon-link s-icon-link-extra"><img src="./img/social/vk.svg" alt="" class="social-img"></a>
 				</div>	
 				<div class="d-flex-s">
-					<a href="#modal-open" class="call-to-action-button">Оставить заявку</a>
+					<a href="#modal-open" data-modal-open="1" class="call-to-action-button">Оставить заявку</a>
 				</div>
 					</nav>
 				</div>
@@ -820,23 +893,73 @@
 
 	<!-- popup -->
 
-	<div class="modal" role="register" data-modal="1">
+	<div class="modal " role="terms" data-modal="1">
 		<div class="modal-container">
+				<div class="form--wrapper">
 			<a href="#0" class="modal-close img-replace">Close</a>
 			<h3 class="modal--tittle section-tittle">Оставьте заявку для согласования 
 				индивидуальных условий</h3>
+				<form method="post" action="" enctype="multipart/form-data" id="form">
 				<div class="input__container">
-					<input type="text" name="name" required="">
-					<label class="for__input">Введите ваше имя</label>
-					<span class="for__example">Например - Дмитрий Андрев</span>
+					<input type="text" name="name" required>
+					<label class="for__input">Введите Ваше имя</label>
+					<span class="for__example">Например - Дмитрий Андреев</span>
 				</div>
+				<div class="input__container">
+				<input type="phone" name="phone" required>
+				<label class="for__input">Введите Ваш телефон</label>
+				<span class="for__example">Например - +7 900 762 4900</span>
+			</div>
+			<div class="input__container">
+			<input type="email" name="email" required>
+			<label class="for__input">Введите Ваш Email</label>
+			<span class="for__example">Например - my_bussines@mymail.ru</span>
+		</div>
+		<div class="checkbox__container">
+				<input id="i2" type="checkbox" checked="" required="">
+				<label for="i2">Я согласен с </label><span data-modal-open="2" class="politics__link privacy-policy">политокой конфиденциальности</span>
+			</div>
+		<input id="theme-mail" type="hidden" name="theme">
+				<input id="btn" type="submit" value="Отправить" class="call-to-action-button modal--button" />
+			</form>
+			<img src="./img/logo--icon.svg" alt="" class="hero-bg">
+		</div>
 		</div>
 	</div>
+
+	<div class="modal terms" role="register" data-modal="2">
+			<div class="modal-container term-to-use">
+					<div class="terms--wrapper">
+				<a href="#0" class="modal-close img-replace">Close</a>
+				<h3 class="modal--tittle section-tittle">Учсловия использования сайта</h3>
+				<div class="long--text--container">
+				<p class="terms--descr">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Точках которое, от всех однажды парадигматическая рекламных скатился последний имеет даль снова. Агентство, предупреждал, текстов снова от всех сих которое подзаголовок своего жаренные одна, путь заглавных города. Приставка осталось мир на берегу, всеми большого проектах его домах снова рыбными ее дороге правилами от всех назад семь, вдали грустный языкового буквоград пустился свое возвращайся алфавит продолжил единственное строчка.
+					 </p>
+					 <p class="terms--descr">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Точках которое, от всех однажды парадигматическая рекламных скатился последний имеет даль снова. Агентство, предупреждал, текстов снова от всех сих которое подзаголовок своего жаренные одна, путь заглавных города. Приставка осталось мир на берегу, всеми большого проектах его домах снова рыбными ее дороге правилами от всех назад семь, вдали грустный языкового буквоград пустился свое возвращайся алфавит продолжил единственное строчка. Гор буквоград, мир составитель они маленькая предупредила? До ты маленький буквоград. Заголовок вдали даль океана наш силуэт журчит переписали напоивший свое рыбными рыбного. Безопасную ты по всей дороге грустный рыбного строчка снова, агентство текстов, предложения, использовало проектах текста.
+						</p>
+						<p class="terms--descr">Гор буквоград, мир составитель они маленькая предупредила? До ты маленький буквоград. Заголовок вдали даль океана наш силуэт журчит переписали напоивший свое рыбными рыбного. Безопасную ты по всей дороге грустный рыбного строчка снова, агентство текстов, предложения, использовало проектах текста.
+							</p>
+							<p class="terms--descr">До ты маленький буквоград. Заголовок вдали даль океана наш силуэт журчит переписали напоивший свое рыбными рыбного. Безопасную ты по всей дороге грустный рыбного строчка снова, агентство текстов, предложения, использовало проектах текста.
+								</p>
+								<p class="terms--descr">Гор буквоград, мир составитель они маленькая предупредила? До ты маленький буквоград. Заголовок вдали даль океана наш силуэт журчит переписали напоивший свое рыбными рыбного. Безопасную ты по всей дороге грустный рыбного строчка снова, агентство текстов, предложения, использовало проектах текста.
+									</p>
+									<p class="terms--descr">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Точках которое, от всех однажды парадигматическая рекламных скатился последний имеет даль снова. Агентство, предупреждал, текстов снова от всех сих которое подзаголовок своего жаренные одна, путь заглавных 
+										</p>
+									</div>
+				<img src="./img/logo--icon.svg" alt="" class="hero-bg">
+			</div>
+			</div>
+		</div>
+
+
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/imagelightbox.min.js"></script>
 <script src="./js/script.js"></script>
-<script src="./js/map-script.js" defer></script>
+<!-- <script src="./js/map-script.js" defer></script> -->
+
+
 </html>

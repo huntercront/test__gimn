@@ -50,7 +50,6 @@ $('.slick-carousel').slick({
 				breakpoint: 576,
 				settings: {
 					slidesToShow: 1,
-					arrows:false,
 					dots:true,
 					
 
@@ -155,6 +154,63 @@ $(document).keyup(function(event){
 		}
 	});
 
+	activityIndicatorOn = function()
+			{
+				$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
+			},
+			activityIndicatorOff = function()
+			{
+				$( '#imagelightbox-loading' ).remove();
+			},
+			overlayOn = function()
+			{
+				$( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
+			},
+			overlayOff = function()
+			{
+				$( '#imagelightbox-overlay' ).remove();
+			};
+			$( 'a[data-imagelightbox=a]' ).imageLightbox(
+		{
+			onStart: 	 function() { overlayOn(); },
+			onEnd:	 	 function() { overlayOff(); activityIndicatorOff(); },
+			onLoadStart: function() { activityIndicatorOn(); },
+			onLoadEnd:	 function() { activityIndicatorOff(); }
+		});
+		$( 'a[data-imagelightbox=testim]' ).imageLightbox(
+		{
+			onStart: 	 function() { overlayOn(); },
+			onEnd:	 	 function() { overlayOff(); activityIndicatorOff(); },
+			onLoadStart: function() { activityIndicatorOn(); },
+			onLoadEnd:	 function() { activityIndicatorOff(); }
+		});
+
+
+// Отправка данных на сервер
+$('#form').trigger('reset');
+$(function() {
+  'use strict';
+  $('#form').on('submit', function(e) {
+		console.log('try submit')
+    e.preventDefault();
+    $.ajax({
+      url: 'send.php',
+      type: 'POST',
+      contentType: false,
+      processData: false,
+      data: new FormData(this),
+      success: function(msg) {
+        console.log(msg);
+        if (msg == 'ok') {
+          alert('Сообщение отправлено');
+          $('#form').trigger('reset'); // очистка формы
+        } else {
+          alert('Ошибка');
+        }
+      }
+    });
+  });
+});
 
 
 });
